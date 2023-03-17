@@ -1,0 +1,26 @@
+.icon-hover:hover {
+    border-color: #3b71ca !important;
+    background-color: white !important;
+  }
+  
+  .icon-hover:hover i {
+    color: #3b71ca !important;
+  }
+  .add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #45a049;
+  }
+  section{
+    width: 100%;
+    
+  }
+  
+  

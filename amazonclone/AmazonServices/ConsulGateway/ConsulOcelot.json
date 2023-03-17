@@ -1,0 +1,69 @@
+﻿{
+  "Routes": [
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/Vendor/Validate",
+      "DownstreamSchme": "http",
+      "UpstreamPathTemplate": "/api/Seller/Validate",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "ServiceName": "SellerService",
+      "LoadBalancerOptions": { "Type": "LeastConnection" }
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/Vendor/Register",
+      "DownstreamSchme": "http",
+      "UpstreamPathTemplate": "/api/Seller/Register",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "ServiceName": "SellerService",
+      "LoadBalancerOptions": { "Type": "LeastConnection" }
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/User/Validate",
+      "DownstreamSchme": "http",
+      "UpstreamPathTemplate": "/api/User1",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "ServiceName": "UserServices",
+      "LoadBalancerOptions": { "Type": "LeastConnection" }
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/User/Register",
+      "DownstreamSchme": "http",
+      "UpstreamPathTemplate": "/api/User",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "ServiceName": "UserServices",
+      "LoadBalancerOptions": { "Type": "LeastConnection" }
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/Items",
+      "DownstreamSchme": "http",
+      "UpstreamPathTemplate": "/api/items",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "ServiceName": "ItemsService",
+      "LoadBalancerOptions": { "Type": "LeastConnection" }
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/Cart",
+      "DownstreamSchme": "http",
+      "UpstreamPathTemplate": "/api/Cart",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "ServiceName": "CartService",
+      "LoadBalancerOptions": { "Type": "LeastConnection" }
+    }
+
+  ],
+  "GlobalConfiguration": {
+    "ServiceDiscoveryProvider": {
+      "Scheme": "http",
+      "Host": "localhost",
+      "Port": 8500,
+      "Type": "Consul"
+    }
+  }
+}
+
+

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nunit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.3.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\exercise-inheritance-furniture\exercise-inheritance-furniture.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="exercise-inheritance-furniture">
+      <HintPath>..\exercise-inheritance-furniture\bin\Debug\net6.0\exercise-inheritance-furniture.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

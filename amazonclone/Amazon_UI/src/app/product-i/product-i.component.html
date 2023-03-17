@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">Products</h1>
+      <div class="row">
+        <div class="col-md-3 mb-3" *ngFor="let item of produtcs">
+          <div class="card border-secondary shadow">
+            <img class="card-img-top" src="{{item.imgUrl}}" alt="Product Image">
+            <div class="card-body" style="height: 400px;">
+              <h5 class="card-title font-weight-bold text-center mb-3">{{item.title}}</h5>
+              <p class="card-text">{{item.description}}</p>
+              <p class="card-text"><small class="text-muted">{{item.category}}</small></p>
+              <p class="card-text text-primary font-weight-bold">{{item.price | currency:'INR'}}</p>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Qty</span>
+                </div>
+                <input type="number" class="form-control" min="1" max="10" value="1">
+              </div>
+              <button class="btn btn-primary mb-2" *ngIf="s.islog()" (click)="addToCart(item)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<form>
+    <label for="title">Title:</label>
+    <input type="text" [(ngModel)]="i.title"id="title" name="title" required>
+  
+    <label for="description">Description:</label>
+    <textarea id="description"  [(ngModel)]="i.description"name="description" required></textarea>
+  
+    <label for="category">Category:</label>
+    <select id="category"  [(ngModel)]="i.category" name="category" required>
+      <option value="">Select one</option>
+      <option value="Clothing">Clothing</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Home and Garden">Home and Garden</option>
+      <option value="Beauty and Health">Beauty and Health</option>
+      <option value="Sports and Outdoors">Sports and Outdoors</option>
+      <option value="Toys and Games">Toys and Games</option>
+      <option value="Other">Other</option>
+    </select>
+  
+    <label >Price:</label>
+    <input type="number"  [(ngModel)]="i.price"id="price" name="price" step=".01" min="0" required>
+  
+    <label for="quantity">Quantity:</label>
+    <input type="number" [(ngModel)]="i.qty" id="quantity" name="quantity" min="0" required>
+  
+    <label for="imageurl">Image URL:</label>
+    <input type="url" id="imageurl"  [(ngModel)]="i.imgUrl"name="imageUrl" required>
+  
+    <button type="submit" (click)="submit()">Submit</button>
+  </form>
+  

@@ -1,0 +1,72 @@
+<!--<!doctype html>
+
+<html>
+<head>
+  <title>Friday Video</title>
+  
+ 
+</head>
+
+<body>
+  
+  <div id='navBar'>
+  <div id='topHalf'>
+    <div id='logoWrapper'>
+   <img id='logo' src="Logo.jpeg" />
+   <h1 id="logo" >TUV</h1>
+    </div>
+    <input id="search" type="text" placeholder="Search In TUV" />
+    <img id='backToSchool' src="http://blog.neurogistics.com/wp-content/uploads/2014/08/Back-To-School-Special-Banner.jpg" alt="" />
+    
+  </div>
+    
+    
+    
+    
+  <div id='bottomHalf'>
+    <div id='department'>Departments</div>
+    <div id='sections'>
+      <div class="section">Your TUV.com</div>
+      <div class="section">Help</div>
+      <div class="dropdown" class="section">
+        <button class="dropbtn">Seller</button>
+        <div class="dropdown-content">
+          <a href="#">Login</a>
+          <a href="#">Register</a>
+          
+        </div>
+      </div>
+    </div>
+    <div id='accountStuff'>
+      <div class="section1"(click)="LoginHandel()">Login</div>
+      <div class="section1"(click)="RegisterHandel()">Register</div>
+      <div class="section1">Cart</div>
+      <div class="section1"></div>
+    </div>
+  </div>
+</div>
+  
+  
+</body>
+</html>
+-->
+<header>
+  <div class="logo">
+    <a href="#"><img src="https://www.amazon.com/favicon.ico" alt="Amazon logo"></a>
+  </div>
+  <div class="search">
+    <input type="text" placeholder="Search...">
+    <button>Search</button>
+  </div>
+  <div class="user-nav">
+    <ul>
+      
+      <li><a routerLink="/Home">Home</a></li>
+      <li><a routerLink="/sellerL">Seller</a></li>
+      <li><a (click)="LoginHandel()">Login</a></li>
+      <li><a routerLink="/product">Products</a></li>
+      <li><a href="#">Cart</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+</header>

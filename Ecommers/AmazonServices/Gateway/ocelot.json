@@ -1,0 +1,49 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/User/Register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5118
+        }
+      ],
+      "UpstreamPathTemplate": "/api/User",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/Validate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5118
+        }
+      ],
+      "UpstreamPathTemplate": "/api/User1",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    }
+    /*{
+      "DownstreamPathTemplate": "/api/User/Register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "basket-api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/User/Register}",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    }*/
+
+  ],
+  "GlobalConfiguration": {
+    "RequestIdKey": "OcRequestId",
+    "AdministrationPath": "/administration"
+  }
+}

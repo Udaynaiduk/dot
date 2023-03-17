@@ -1,0 +1,14 @@
+.contain{
+    display: flex;
+    flex-direction: row;
+    border: 5px solid black;
+    padding: 14px;
+}
+.item{
+    border: 3px  solid rgb(red, green, blue);
+    margin-right: 3px;
+    box-shadow: 55px 55px 50px 10px soild rgb(28,28,209);
+    padding: 12px;
+    border-radius: 12px;
+
+}

@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+.login/* design to login page  */{ 
+    background: white; 
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+  .login_logo >img/* set width to image */{ 
+    width: 300px;
+}
+.login_container/* it give design to add input form user */{ 
+    width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    box-shadow:0px 1px 2px 3px rgba(0,0,0,0.1);
+    border: 1px solid lightgray;
+    padding: 15px;
+    height: 500px;
+}
+.login_container > form >input:focus{
+    border:2px solid orange;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2); /* it will be add black shadow to login_container */
+}
+.login_container > p{
+    margin-top: 15px;
+    font-size: 12px;
+    justify-content: justify;
+    
+
+}
+a.int{
+    cursor: pointer;
+    color: rgb(34, 127, 163);
+    text-decoration: none;
+
+}
+a.int:hover{
+    color: rgb(245, 202, 86);
+    text-decoration: underline;
+}
+.login_signInButton /* it give design to sigin in button  */{
+    width: 100%;
+    height: 30px;
+    border: none; 
+    border:1px solid;
+    cursor: pointer; 
+    
+      background-color: #f3b058;/* i will add some colour by colour code  */
+
+   border-radius: 2px;
+   margin-top: 10px;
+   border-color: #a88734 #9c7e31;
+} 
+.login_registerButton /* it give design to create your amazon account */{
+    cursor: pointer;
+    border-radius:2px ;
+
+    width: 100%;
+    outline: none;
+    border: 1px solid;
+    border-color: darkgray;
+    height: 30px;
+    margin-top: 10px;
+
+
+}
+.login_container >h5{
+  font-weight:500;
+  margin-bottom: 20px;
+}
+.login_container >form >h5{
+  margin-bottom: 5px;
+}
+#sign{
+    text-align: center;
+}
+#box{
+    height: 20px;
+    width:350px;
+
+}
